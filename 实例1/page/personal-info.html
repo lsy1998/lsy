@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>个人中心</title>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="../lib/jquery-3.3.1.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <!-- Bootstrap -->
+    <link href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/mycss.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid personal-center">
+    <div class="row">
+        <div class="col-md-2 left-part">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModal">
+                发布项目
+            </button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">发布项目</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="">主题</div>
+                            <div class="">地点</div>
+                            <div class="">时间</div>
+                            具体内容
+                            <textarea rows="5" cols="76"></textarea>
+                            <input type="file">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="button">
+                已发布项目 <span class="badge">4</span>
+            </button>
+            <button class="btn btn-primary" type="button">
+                已参与项目 <span class="badge">4</span>
+            </button>
+            <button class="btn btn-primary" type="button">
+                附近的项目 <span class="badge">4</span>
+            </button>
+
+        </div>
+        <div class="container-fluid col-md-10 right-part">
+            <div class="row">
+            <!--导航栏-->
+            <nav class="navbar navbar-default navbar-static-top navbar-1">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">图标</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">链接一 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">链接二</a></li>
+                            <li><a href="#">链接三</a></li>
+                            <li><a href="#">...</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单一 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="搜索">
+                            </div>
+                            <button type="submit" class="btn btn-default">提交</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                            <li><a href="page/personal-info.html">个人信息</a></li>
+                            <!--<li class="dropdown">-->
+                                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单二 <span class="caret"></span></a>-->
+                                <!--<ul class="dropdown-menu">-->
+                                    <!--<li><a href="#">Action</a></li>-->
+                                    <!--<li><a href="#">Another action</a></li>-->
+                                    <!--<li><a href="#">Something else here</a></li>-->
+                                    <!--<li role="separator" class="divider"></li>-->
+                                    <!--<li><a href="#">Separated link</a></li>-->
+                                <!--</ul>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--个人简单介绍-->
+            <div class="container-fluid simple-introduce">
+                <div class="row">
+                <div class="col-md-3 touxiang" >
+                    <img src="../img/a0.jpg" alt="" class="img-circle img-responsive text-center" >
+                </div>
+                <div class="col-md-5 introduce">
+                    <h1>后裔</h1>
+                    <p>男</p>
+                    <p>连太阳都被我射熄火了</p>
+                    <a class="btn btn-default btn-sm btn-follow" href="#" role="button">follow</a>
+                </div>
+                <div class="col-md-2 followers">
+                    <p>100</p>
+                    <p>followers</p>
+                </div>
+                    <div class="col-md-2 following">
+                        <p>100</p>
+                        <p>following</p>
+                    </div>
+                </div>
+            </div>
+
+                <!--标签页-->
+                <div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">动态</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">热门</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">私信</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">等等</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active fade-in-active" id="home"> <img src="img/weixinhao.png" alt="..." style="width:1700px;height: 390px"></div>
+                        <div role="tabpanel" class="tab-pane fade" id="profile"> <img src="img/weixinhao.png" alt="..." style="width:1700px;height: 390px"></div>
+                        <div role="tabpanel" class="tab-pane fade" id="messages"> <img src="img/weixinhao.png" alt="..." style="width:1700px;height: 390px"></div>
+                        <div role="tabpanel" class="tab-pane fade" id="settings"> <img src="img/weixinhao.png" alt="..." style="width:1700px;height: 390px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
